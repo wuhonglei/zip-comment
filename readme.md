@@ -26,7 +26,7 @@ npm i zip-comment
 ```html
 <body>
     <input type="file" onchange="selectFile(event)">
-    <script src="../dist/zip_comment.js"></script>
+    <script src="../dist/bundle.umd.js"></script>
     <script>
         async function selectFile(event) {
             let file = event.target.files[0];
@@ -40,6 +40,15 @@ npm i zip-comment
 2. import 导入使用
 ```javascript
 import loadZipAsync from 'zip-comment';
+loadZipAsync(file)
+    .then(comment => {
+        console.info(comment);
+    });
+```
+
+3. require 导入使用
+```javascript
+var { loadZipAsync } = require('zip-comment');
 loadZipAsync(file)
     .then(comment => {
         console.info(comment);
