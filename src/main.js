@@ -72,10 +72,6 @@ function readInt(data, startIndex, size) {
     return result;
 }
 
-function decodeFile(data) {
-    return String.fromCharCode.apply(null, data);
-}
-
 // 获取字符编码对应字符的字节长度（比如汉字是 2 个字节，ascii 是 1 个字节）
 var _utf8len = (function() {
     var _utf8len = new Array(256);
@@ -140,4 +136,4 @@ function decodeFile(buf) {
     return String.fromCharCode.apply(null, utf16buf);
 };
 
-module.exports = loadZipAsync;
+export default loadZipAsync;

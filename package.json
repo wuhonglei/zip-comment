@@ -1,33 +1,32 @@
 {
-  "name": "zip-comment",
-  "version": "1.0.2",
-  "description": "该库仅用于读取 zip 压缩包中的注释，并不能用于读取 zip 中每个文件的注释",
-  "main": "./dist/zip_comment.js",
-  "directories": {
-    "test": "test"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/wuhonglei/zip-comment.git"
-  },
-  "keywords": [
-    "zip",
-    "comment",
-    "zipcoment"
-  ],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/wuhonglei/zip-comment/issues"
-  },
-  "homepage": "https://github.com/wuhonglei/zip-comment#readme",
-  "devDependencies": {
-    "copy-webpack-plugin": "^6.1.0",
-    "webpack": "^4.44.1",
-    "webpack-cli": "^3.3.12"
-  }
+    "name": "zip-comment",
+    "version": "1.0.5",
+    "description": "该库仅用于读取 zip 压缩包中的注释，并不能用于读取 zip 中每个文件的注释",
+    "main": "./dist/bundle.umd.js",
+    "module": "./dist/bundle.esm.js",
+    "directories": {
+        "test": "test"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "rollup -c ./rollup.umd.js & rollup -c ./rollup.esm.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/wuhonglei/zip-comment.git"
+    },
+    "keywords": [
+        "zip",
+        "comment",
+        "zipcoment"
+    ],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/wuhonglei/zip-comment/issues"
+    },
+    "homepage": "https://github.com/wuhonglei/zip-comment#readme",
+    "devDependencies": {
+        "rollup": "^2.26.9"
+    }
 }
