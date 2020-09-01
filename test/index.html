@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zip</title>
+</head>
+
+<body>
+    <input type="file" onchange="selectFile(event)">
+    <script src="./zip_comment.js"></script>
+    <script>
+        console.info('loadZipAsync', loadZipAsync);
+    </script>
+    <script type="module">
+        import test from './math.js'; // import loadZipAsync from './zip_comment.js'; // async function selectFile(event) { // let file = event.target.files[0]; // let comment = await loadZipAsync(file); // console.info(comment); // }
+    </script>
+</body>
+
+</html>
