@@ -1,9 +1,9 @@
 {
     "name": "zip-comment",
-    "version": "1.0.6",
+    "version": "1.0.7",
     "description": "该库仅用于读取 zip 压缩包中的注释，并不能用于读取 zip 中每个文件的注释",
-    "main": "./dist/bundle.umd.js",
-    "module": "./dist/bundle.esm.js",
+    "main": "./dist/bundle.umd.min.js",
+    "module": "./dist/bundle.esm.min.js",
     "directories": {
         "test": "test"
     },
@@ -27,6 +27,7 @@
     },
     "homepage": "https://github.com/wuhonglei/zip-comment#readme",
     "devDependencies": {
-        "rollup": "^2.26.9"
+        "rollup": "^2.26.9",
+        "rollup-plugin-terser": "^7.0.1"
     }
 }
