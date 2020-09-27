@@ -1,6 +1,6 @@
 {
     "name": "zip-comment",
-    "version": "1.0.7",
+    "version": "1.0.8",
     "description": "该库仅用于读取 zip 压缩包中的注释，并不能用于读取 zip 中每个文件的注释",
     "main": "./dist/bundle.umd.min.js",
     "module": "./dist/bundle.esm.min.js",

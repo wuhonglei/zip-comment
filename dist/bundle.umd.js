@@ -35,7 +35,7 @@
             throw new Error('does not find the end of central directory');
         }
 
-        startIndex = offset + 20;
+        var startIndex = offset + 20;
         var commentLenSize = 2;
         var zipCommentLength = readInt(data, startIndex, commentLenSize);
         if (!zipCommentLength) {
